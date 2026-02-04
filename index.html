@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <!-- Display -->
+      <div class="display-container">
+        <input
+          class="display"
+          type="text"
+          value=""
+          readonly
+          aria-label="calculator display"
+        />
+      </div>
+
+      <!-- Buttons -->
+      <div class="keys">
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key key-op" data-value="+">+</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key key-op" data-value="-">-</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key key-op" data-value="*">x</button>
+
+        <button class="key key-clear" data-action="clear">C</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key key-eq" data-action="equals">=</button>
+        <button class="key key-op" data-value="/">/</button>
+      </div>
+    </div>
+  </body>
+</html>
